@@ -50,15 +50,15 @@ export function Services() {
   return (
     <section
       id="services"
-      className="py-20 bg-linear-to-br from-[#F7FAFC] to-white"
+      className="py-20 bg-linear-to-br from-[#F7FAFC] to-white dark:from-gray-950 dark:to-gray-900"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4 text-[#1A202C]">
+          <h2 className="text-4xl md:text-5xl mb-4 text-[#1A202C] dark:text-white font-bold">
             Nuestros <span className="text-[#38BDF8]">Servicios</span>
           </h2>
           <div className="w-24 h-1 bg-[#38BDF8] mx-auto mb-6"></div>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
             Soluciones completas para modernizar y optimizar tu operación
             logística
           </p>
@@ -68,13 +68,13 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border-t-4 border-[#38BDF8]"
+              className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 border-t-4 border-[#38BDF8]"
             >
               <div className="bg-linear-to-br from-[#38BDF8] to-[#0EA5E9] w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                 <service.icon className="text-white" size={32} />
               </div>
-              <h3 className="text-xl mb-4 text-[#1A202C]">{service.title}</h3>
-              <p className="text-gray-700 leading-relaxed">
+              <h3 className="text-xl mb-4 text-[#1A202C] dark:text-white">{service.title}</h3>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                 {service.description}
               </p>
             </div>

@@ -64,10 +64,10 @@ export function Plans() {
   ];
 
   return (
-    <section id="plans" className="py-20 bg-white">
+    <section id="plans" className="py-20 bg-white dark:bg-gray-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4 text-[#1A202C]">
+          <h2 className="text-4xl md:text-5xl mb-4 text-[#1A202C] dark:text-white">
             Planes y <span className="text-[#38BDF8]">Precios</span>
           </h2>
           <div className="w-24 h-1 bg-[#38BDF8] mx-auto mb-6"></div>
@@ -80,7 +80,7 @@ export function Plans() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 border-2 ${
+              className={`relative bg-white dark:bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2 border-2 ${
                 plan.popular ? "border-[#38BDF8] scale-105" : "border-gray-200"
               }`}
             >
@@ -96,15 +96,15 @@ export function Plans() {
               <div className="p-8">
                 {/* Header */}
                 <div className="mb-6">
-                  <h3 className="text-2xl mb-2 text-[#1A202C]">{plan.name}</h3>
-                  <p className="text-sm text-gray-600 mb-4">
+                  <h3 className="text-2xl mb-2 text-[#1A202C] dark:text-white">{plan.name}</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-200 mb-4">
                     {plan.description}
                   </p>
                   <div className="flex items-baseline">
-                    <span className="text-5xl text-[#1A202C]">
+                    <span className="text-5xl text-[#1A202C] dark:text-gray-200">
                       {plan.price}
                     </span>
-                    <span className="text-gray-600 ml-2">{plan.period}</span>
+                    <span className="text-gray-600 dark:text-gray-200 ml-2">{plan.period}</span>
                   </div>
                 </div>
 
@@ -117,7 +117,7 @@ export function Plans() {
                       >
                         <Check className="text-white" size={14} />
                       </div>
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-gray-700 dark:text-gray-200">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -135,11 +135,11 @@ export function Plans() {
 
         {/* Additional Info */}
         <div className="mt-16 text-center">
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 dark:text-gray-200 mb-4">
             ¿Necesitas un plan personalizado? Contáctanos para una solución a
             medida
           </p>
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 dark:text-gray-200">
             Todos los planes incluyen actualización gratuita y sin costos
             ocultos
           </p>

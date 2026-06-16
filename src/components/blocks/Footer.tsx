@@ -4,13 +4,13 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1A202C] text-gray-300">
+    <footer className="dark:bg-[#1A202C] bg-white text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <img src={"/logo.png"} alt="carGo Logo" className="h-16 w-auto mb-4" />
-            <p className="text-gray-400 mb-4">
+            <p className="dark:text-white text-gray-600 mb-4">
               Revolucionando la logística con tecnología, seguridad y
               automatización para negocios de todos los tamaños.
             </p>
@@ -44,8 +44,8 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-white mb-4">Enlaces Rápidos</h4>
-            <ul className="space-y-2">
+            <h4 className="text-gray-900 dark:text-white mb-4 font-bold">Enlaces Rápidos</h4>
+            <ul className="space-y-2 dark:text-white text-gray-700">
               <li>
                 <a
                   href="#about"
@@ -83,8 +83,8 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="text-white mb-4">Legal</h4>
-            <ul className="space-y-2">
+            <h4 className="dark:text-white text-gray-900 font-bold mb-4">Legal</h4>
+            <ul className="space-y-2 dark:text-white text-gray-700">
               <li>
                 <a href="#" className="hover:text-[#38BDF8] transition-colors">
                   Términos y Condiciones
@@ -106,24 +106,6 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-
-        {/* Newsletter */}
-        <div className="border-t border-gray-700 pt-8 mb-8">
-          <div className="max-w-md">
-            <h4 className="text-white mb-4">Suscríbete a Nuestro Newsletter</h4>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder="tu@email.com"
-                className="flex-1 px-4 py-2 bg-[#2D3748] border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent text-white placeholder-gray-500"
-              />
-              <button className="bg-[#38BDF8] hover:bg-[#0EA5E9] px-6 py-2 rounded-lg transition-colors flex items-center gap-2">
-                <Mail size={20} />
-                Suscribir
-              </button>
-            </div>
           </div>
         </div>
 
